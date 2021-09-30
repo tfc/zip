@@ -149,3 +149,14 @@ test-suite tests
 
     if !flag(disable-zstd)
         cpp-options: -DENABLE_ZSTD
+
+executable unziptest
+    ghc-options:      -Wall -Werror -threaded -rtsopts -O2
+
+    hs-source-dirs:   bm
+    default-language: Haskell2010
+    main-is:          Main.hs
+    build-depends:
+          async
+        , base
+        , zip
