@@ -4,5 +4,9 @@ let
 in
 pkgs.haskellPackages.shellFor {
   packages = p: [ zip ];
-  buildInputs = [ pkgs.cabal-install ];
+  buildInputs = with pkgs; [
+    cabal-install
+    curl
+    imagemagick
+  ];
 }

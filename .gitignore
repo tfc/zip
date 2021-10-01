@@ -27,3 +27,5 @@ dist-*/
 dist/
 stack.yaml
 stack.yaml.lock
+*.png
+*.pdf
